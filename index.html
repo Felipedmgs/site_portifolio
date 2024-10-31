@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Daniel Domingues - Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Portfólio de Felipe Daniel Domingues, Desenvolvedor FullStack e DevOps com experiência em PHP, MySQL, JavaScript e tecnologias DevOps.">
+    <meta name="keywords" content="Felipe Daniel Domingues, FullStack, DevOps, Desenvolvedor, Portfólio, PHP, MySQL, JavaScript, Logística">
+    <meta name="author" content="Felipe Daniel Domingues">
+</head>
+
+
+
+<body>
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+        <a href="https://linkedin.com/in/felipe-domingues-19453126" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn"></a>
+        <a href="https://github.com/Felipedmgs" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"></a>
+        <a href="https://www.instagram.com/seu_usuario" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>    
+        
+        <!-- Adicione mais redes sociais conforme necessário -->
+    </div>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="logo">
+            <h1>Felipe Domingues</h1>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#certificacoes">Certificações</a></li>
+            <li><a href="#educacao">Educação</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h2>Desenvolvedor FullStack e DevOps</h2>
+        </header>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <div class="content">
+                <p>Profissional com mais de 7 anos de experiência no desenvolvimento FullStack de sistemas web, com sólidos conhecimentos em PHP, MySQL, SQL Server, JavaScript, e tecnologias DevOps. Atualmente, trabalho como desenvolvedor FullStack na Andreani Logística, focando em otimização de processos logísticos.</p>
+            </div>
+        </section>
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>
+            <div class="container-experience">
+                <div class="tabs">
+                    <button class="tablink" onclick="openTab(event, 'Andreani')">Andreani Logística</button>
+                    <button class="tablink" onclick="openTab(event, 'GlobalBlue')">GlobalBlue</button>
+                    <button class="tablink" onclick="openTab(event, 'EMAE')">EMAE</button>
+                </div>
+                <div class="tab-content">
+                    <div id="Andreani" class="tabcontent">
+                        <h3>Andreani Logística</h3>
+                        <p>Desenvolvimento de interfaces em PHP para processos logísticos e criação de aplicações personalizadas.</p>
+                    </div>
+                    <div id="GlobalBlue" class="tabcontent" style="display:none">
+                        <h3>GlobalBlue</h3>
+                        <p>Gestão de testes, releases e deploy em servidores e bancos de dados.</p>
+                    </div>
+                    <div id="EMAE" class="tabcontent" style="display:none">
+                        <h3>EMAE</h3>
+                        <p>Manutenção de hardware e redes, além da criação de inventário.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+          
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="content gallery">
+                <!-- Project Items will be inserted here using JavaScript -->
+            </div>
+        </section>
+        <section id="certificacoes">
+            <h2>Certificações e Cursos</h2>
+            <div class="content">
+                <ul>
+                    <li><strong>AWS – Cloud Practitioner:</strong> Concluído em 09/2024</li>
+                    <li><strong>Docker – Udemy:</strong> 2024</li>
+                    <li><strong>Python – FIAP:</strong> 2023</li>
+                </ul>
+            </div>
+        </section>
+        <section id="educacao">
+            <h2>Educação</h2>
+            <div class="content">
+                <ul>
+                    <li><strong>USCS:</strong> Master em Information Systems em Arquitetura e Engenharia de Software</li>
+                    <li><strong>Universidade São Judas Tadeu:</strong> Graduação em Ciência da Computação</li>
+                </ul>
+            </div>
+        </section>
+        <footer id="contato">
+            <h2>Contato</h2>
+            <div class="content">
+                <p>Email: <a href="mailto:felipedd@hotmail.com">felipedd@hotmail.com</a></p>
+                <p><a href="https://linkedin.com/in/felipe-domingues-19453126" target="_blank">LinkedIn</a> | <a href="https://github.com/Felipedmgs" target="_blank">GitHub</a> | <a href="https://www.instagram.com/seu_usuario" target="_blank">Instagram</a></p>
+            </div>
+            <div class="social-footer">
+                <a href="https://linkedin.com/in/felipe-domingues-19453126" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/Felipedmgs" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"></a>
+                <a href="https://www.instagram.com/seu_usuario" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            </div>
+        </footer>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
