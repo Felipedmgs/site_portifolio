@@ -2,6 +2,7 @@
 const projects = [
     { title: "Projeto 1", image: "https://via.placeholder.com/150", link: "https://github.com/Felipedmgs/projeto1" },
     { title: "Projeto 2", image: "https://via.placeholder.com/150", link: "https://github.com/Felipedmgs/projeto2" },
+    { title: "Projeto 3", image: "https://via.placeholder.com/150", link: "https://github.com/Felipedmgs/projeto3" },
     { title: "Projeto 3", image: "https://via.placeholder.com/150", link: "https://github.com/Felipedmgs/projeto3" }
 ];
 

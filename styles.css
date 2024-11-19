@@ -60,12 +60,16 @@ body {
     font-size: 2.5em;
 }
 
+
+
 .titulo-box {   
     display: flex;
     align-items: center; 
+    padding-bottom: 120px;
 }
 
 .titulo-box1 {   
+    position: relative;
     display: flex;
     align-items: center; 
     width: 100%;   
@@ -76,17 +80,42 @@ body {
     padding: 10px;
 }
 
+.conteudo {
+    display: flex;
+    position: relative;
+    width: 100%; 
+}
+
+.background-img {    
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: auto;
+    z-index: -1; /* Envia a imagem para trás dos outros elementos */
+    opacity: 0.5; /* Opcional: Ajusta a transparência para melhorar o contraste */  
+
+    /* Aplicando máscara com gradiente circular */
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 90%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 90%);
+    
+    /* Garantindo que o gradiente se adapte à imagem */
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+}
 
 .titulo {     
     padding: 0;
     margin-right: 10px; /* Espaço entre o título e o SVG */
     text-align: left;
     max-width: 350px;    
+    z-index: 1;
 }
 
-.deteils {    
-    padding: 60px 800px 0px 0px;
-    text-align: left;  
+.deteils {     
+    padding: 90px 0px 0px 0px;
+    text-align: left !important;  
+    z-index: 1; 
 }
 
 span {
@@ -134,7 +163,7 @@ span {
 
 header {
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 2em;    
 }
 
 header h2 {
@@ -152,12 +181,11 @@ section {
     width: 50%; 
     height: 300px;
     padding: 20px;
-
     box-sizing: border-box;
     clip-path: polygon(0 0, 100% 0, 100% 60%, 85% 100%, 0 100%);
     box-sizing: border-box;    
-
 }
+
 
 h2 {
     margin-bottom: 1em;
@@ -209,6 +237,7 @@ ul {
 
 .tabcontent {
     display: none;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .tabcontent h3 {
@@ -219,7 +248,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .project {
@@ -227,8 +256,7 @@ ul {
 }
 
 .project img {
-    max-width: 100%;
-    border-radius: 8px;
+    max-width: 100%;    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
@@ -243,6 +271,7 @@ ul {
 
 .project:hover img {
     transform: scale(1.05);
+    border:  3px solid #6bd1ff  !important;
 }
 
 footer {
@@ -338,6 +367,58 @@ footer a:hover {
 
 
 @media (max-width: 768px) {
+
+    .main-content {
+        padding: 5px !important;
+        max-width: 90% !important;
+        margin: auto;
+    }
+
+    .titulo-box1 {           
+        display: block;
+        align-items: center; 
+        width: 100%;   
+        padding: 10px;        
+    }
+
+    #sobre{
+        margin: 0px 20px 20px 0px;
+        padding: 10px;
+        height: 340px !important;        
+    }
+
+    #experiencia{
+        margin: 0px 20px 0px 0px;
+        padding: 10px;
+        height: 400px !important;
+    }
+    
+    .background-img {    
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 320px;
+        height: auto;
+        z-index: -1; /* Envia a imagem para trás dos outros elementos */
+        opacity: 0.5; /* Opcional: Ajusta a transparência para melhorar o contraste */  
+    }
+
+    .border-section{   
+        border:  3px solid #6bd1ff  !important;
+        width: 95%;     
+        padding: 20px;
+        margin-top: 20px;
+    
+        box-sizing: border-box;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 85% 100%, 0 100%);
+        box-sizing: border-box;        
+    }    
+        
+    .deteils {    
+        padding: 60px 0px 0px 0px;
+        text-align: left !important;
+    }
+
     .top-nav {
         flex-direction: column;
         align-items: center;
@@ -369,7 +450,7 @@ footer a:hover {
     }
 
     .container-experience {
-        flex-direction: column;
+        flex-direction: column;       
     }
 
     .tabs {
@@ -399,6 +480,18 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
+    .main-content {
+        padding: 5px !important;
+        max-width: 90% !important;
+        width: 100%;
+        margin: auto;
+    }
+
+    .deteils {    
+        padding: 60px 50px 0px 0px;
+        text-align: left;  
+    }
+
     .top-nav ul {
         width: 100%;
         text-align: center;
