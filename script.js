@@ -7,24 +7,34 @@ const projects = [
 ];
 
 // Function to render projects
+// Função para renderizar os projetos
 const gallery = document.querySelector('.gallery');
 projects.forEach(({ title, image, link }) => {
+    // Cria o elemento do projeto
     const projectDiv = document.createElement('div');
     projectDiv.classList.add('project');
 
+    // Cria o link
+    const linkElem = document.createElement('a');
+    linkElem.href = link;
+    linkElem.target = "_blank"; // Abre o link em uma nova aba
+    linkElem.title = title; // Adiciona uma dica ao passar o mouse
+
+    // Adiciona a imagem ao link
     const img = document.createElement('img');
     img.src = image;
     img.alt = title;
 
-    const linkElem = document.createElement('a');
-    linkElem.href = link;
-    linkElem.target = "_blank";
-    linkElem.textContent = title;
+    linkElem.appendChild(img); // Insere a imagem no link
 
-    projectDiv.appendChild(img);
+    // Adiciona o link ao div do projeto
     projectDiv.appendChild(linkElem);
+
+    // Adiciona o projeto à galeria
     gallery.appendChild(projectDiv);
 });
+
+
 
 
 function openTab(evt, tabName) {
