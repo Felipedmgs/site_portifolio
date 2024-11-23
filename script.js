@@ -34,9 +34,6 @@ projects.forEach(({ title, image, link }) => {
     gallery.appendChild(projectDiv);
 });
 
-
-
-
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");

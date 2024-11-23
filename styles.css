@@ -76,7 +76,7 @@ body {
 }
 
 #sobre{
-    margin: 0px 20px 0px 0px;
+    margin: 0px 6px 0px 0px;
     padding: 10px;
 }
 
@@ -171,21 +171,31 @@ header h2 {
     color: #8892b0;
 }
 
-section {
-   /* margin-bottom: 2em;     */
+section { 
    background-color: #021017;   
 }
-
-.border-section{   
-    border:  3px solid #6bd1ff  !important;
-    width: 50%; 
-    height: 300px;
-    padding: 20px;
-    box-sizing: border-box;
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 85% 100%, 0 100%);
-    box-sizing: border-box;    
+.borda_div{   
+    background: #6bd1ff;    
+    width: 50%;
+    height: 326px;    
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 85% 100%, 0 100%);    
 }
 
+.border-section{    
+    height: 300px;    
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 85% 100%, 0 100%);
+    position: relative; 
+    left: 3px;
+    top: 3px;   
+}
+
+.div-borda-sobre{
+    margin-right: 20px;  
+}
+
+.div-borda-experiencia{
+    padding-right: 6px !important;
+}
 
 h2 {
     margin-bottom: 1em;
@@ -263,12 +273,10 @@ ul {
     gap: 1em;
     justify-content: center;
     padding-bottom: 20px;
-
 }
 
 .project {
-    text-align: center;
-   
+    text-align: center;  
 }
 
 .project img {
@@ -398,14 +406,12 @@ footer a:hover {
     }
 
     #sobre{
-        margin: 0px 0px 20px 0px;
-        padding: 20px;
+        margin: 0px 0px 20px 0px;        
         height: 380px !important;          
     }
 
     #experiencia{
-        margin: 0px 20px 0px 0px;
-        padding: 10px;
+        margin: 0px 20px 0px 0px;        
         height: 450px !important;        
     }
     
