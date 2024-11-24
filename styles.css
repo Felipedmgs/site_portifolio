@@ -68,16 +68,22 @@ body {
     padding-bottom: 120px;
 }
 
-.titulo-box1 {   
-    position: relative;
+.titulo-box1 {    
+    width: 100%;
     display: flex;
-    align-items: center; 
-    width: 100%;   
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    position: relative;
+    padding: 0px;
+    margin: 0px 3px 0px 0px;
 }
 
 #sobre{
-    margin: 0px 6px 0px 0px;
-    padding: 10px;
+    margin: 0px 3px 0px 0px;
+}
+
+#experiencia{
+    margin: 0px 3px 0px 0px;    
 }
 
 .conteudo {
@@ -104,12 +110,12 @@ body {
     -webkit-mask-size: 100% 100%;
 }
 
-.titulo {     
+.titulo {   
     padding: 0;
-    margin-right: 10px; /* Espaço entre o título e o SVG */
+    margin-right: 10px; 
     text-align: left;
     max-width: 350px;    
-    z-index: 1;
+    z-index: 1;  
 }
 
 .deteils {     
@@ -176,25 +182,28 @@ section {
 }
 .borda_div{   
     background: #6bd1ff;    
-    width: 50%;
-    height: 326px;    
+    width: 50%;    
+    height: 330px;    
     clip-path: polygon(0 0, 100% 0, 100% 60%, 85% 100%, 0 100%);    
+    position: relative;
 }
 
 .border-section{    
-    height: 300px;    
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 85% 100%, 0 100%);
-    position: relative; 
-    left: 3px;
-    top: 3px;   
+    height: 305px;    
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 85% 100%, 0 100%);   
+    position: absolute; /* Ajusta o posicionamento */
+    top: 3px; /* Alinha a seção corretamente dentro da borda */
+    left: 2px;
+    background-color: #021017;
+    padding: 10px;    
 }
 
 .div-borda-sobre{
-    margin-right: 20px;  
+    margin-right: 20px;    
 }
 
 .div-borda-experiencia{
-    padding-right: 6px !important;
+    padding-right: 0px !important;     
 }
 
 h2 {
@@ -398,21 +407,40 @@ footer a:hover {
         margin: auto;
     }
 
+    .borda_div{   
+        background: #6bd1ff;    
+        width: 100%;    
+        height: 430px;    
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 85% 100%, 0 100%);    
+        position: relative;
+        margin-bottom: 20px;
+    } 
+
     .titulo-box1 {           
         display: block;
         align-items: center; 
         width: 100%;           
-        padding: 10px;        
+        padding: 0px;        
     }
 
-    #sobre{
-        margin: 0px 0px 20px 0px;        
-        height: 380px !important;          
+    #sobre{        
+        height: 340px !important; 
+        width: 99%;
+    }
+
+    .div-borda-sobre{        
+        height: 344px;
     }
 
     #experiencia{
         margin: 0px 20px 0px 0px;        
-        height: 450px !important;        
+        height: 454px !important;   
+        width: 99%;     
+    }
+
+    .div-borda-experiencia{        
+        margin-top: 00px !important;
+        height: 460px !important;
     }
     
     .background-img {    
@@ -436,7 +464,7 @@ footer a:hover {
     }    
         
     .deteils {    
-        padding: 45px 0px 0px 0px !important;
+       padding: 45px 0px 0px 0px !important;
         text-align: left !important;
     }   
     
