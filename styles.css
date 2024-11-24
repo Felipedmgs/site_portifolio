@@ -69,9 +69,8 @@ body {
     overflow: hidden; 
 }
 
-
 .titulo-box .conteudo > div,
-.titulo-box .background-img {
+.titulo-box /*.background-img*/{
   /*  position: relative;*/
     transform: translateX(100%); /* Começa fora da tela à direita */
     opacity: 0; /* Invisível no início */
@@ -80,9 +79,9 @@ body {
 
 /* Classe para ativar a animação */
 .titulo-box .conteudo > div.animate,
-.titulo-box .background-img.animate {
+.titulo-box /*.background-img.animate*/{
     transform: translateX(0); /* Move para dentro da tela */
-    opacity: 1; /* Torna visível */
+    opacity: 1; /* Torna visível */    
 }
 
 
@@ -96,19 +95,6 @@ body {
     margin: 0px 3px 0px 0px;
 }
 
-#sobre{
-    margin: 0px 3px 0px 0px;
-}
-
-#experiencia{
-    margin: 0px 3px 0px 0px;    
-}
-
-.conteudo {
-    display: flex;
-    position: relative;
-    width: 100%; 
-}
 
 .background-img {    
     position: absolute;
@@ -121,11 +107,21 @@ body {
 
     /* Aplicando máscara com gradiente circular */
     mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 90%);
-    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 90%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 60%);
     
     /* Garantindo que o gradiente se adapte à imagem */
     mask-size: 100% 100%;
     -webkit-mask-size: 100% 100%;
+
+  /* Adicionando transições para animação */
+  transform: translateX(100%); /* Inicialmente fora da tela */
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Classe que ativa a animação */
+.background-img.animate {
+  transform: translateX(0); /* Move para dentro da tela */
+  opacity: 0.5; /* Ajusta a transparência */
 }
 
 .titulo {   
@@ -134,6 +130,21 @@ body {
     text-align: left;
     max-width: 350px;    
     z-index: 1;  
+}
+
+
+#sobre{
+    margin: 0px 3px 0px 0px;
+}
+
+#experiencia{
+    margin: 0px 3px 0px 0px;    
+}
+
+.conteudo {
+    display: flex;
+    position: relative;
+    width: 100%; 
 }
 
 .deteils {     

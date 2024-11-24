@@ -55,10 +55,19 @@ function toggleMenu() {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".titulo-box .conteudo > div, .titulo-box .background-img");
+    const elements = document.querySelectorAll(".titulo-box .conteudo > div, .titulo-box");
     elements.forEach((el, index) => {
         setTimeout(() => {
             el.classList.add("animate"); // Adiciona classe para ativar a animação
         }, index * 500); // Adiciona atraso sequencial
     });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const backgroundImg = document.querySelector(".background-img");
+
+    // Aguarde um pequeno intervalo antes de ativar a animação
+    setTimeout(() => {
+        backgroundImg.classList.add("animate");
+    }, 600); // Tempo em milissegundos
 });
