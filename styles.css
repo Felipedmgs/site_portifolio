@@ -60,13 +60,31 @@ body {
     font-size: 2.5em;
 }
 
-
-
 .titulo-box {   
     display: flex;
     align-items: center; 
     padding-bottom: 120px;
+
+    position: relative;
+    overflow: hidden; 
 }
+
+
+.titulo-box .conteudo > div,
+.titulo-box .background-img {
+  /*  position: relative;*/
+    transform: translateX(100%); /* Começa fora da tela à direita */
+    opacity: 0; /* Invisível no início */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Anima movimento e visibilidade */
+}
+
+/* Classe para ativar a animação */
+.titulo-box .conteudo > div.animate,
+.titulo-box .background-img.animate {
+    transform: translateX(0); /* Move para dentro da tela */
+    opacity: 1; /* Torna visível */
+}
+
 
 .titulo-box1 {    
     width: 100%;

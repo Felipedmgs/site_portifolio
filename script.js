@@ -53,3 +53,12 @@ function toggleMenu() {
     navLinks.classList.toggle('active');
 }
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".titulo-box .conteudo > div, .titulo-box .background-img");
+    elements.forEach((el, index) => {
+        setTimeout(() => {
+            el.classList.add("animate"); // Adiciona classe para ativar a animação
+        }, index * 500); // Adiciona atraso sequencial
+    });
+});
