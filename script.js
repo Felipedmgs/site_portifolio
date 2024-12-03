@@ -1,9 +1,9 @@
 // Sample projects array
 const projects = [
-    { title: "Projeto 1", image: "https://via.placeholder.com/150", link: "https://github.com/Felipedmgs/projeto1" },
-    { title: "Projeto 2", image: "https://via.placeholder.com/150", link: "https://github.com/Felipedmgs/projeto2" },
-    { title: "Projeto 3", image: "https://via.placeholder.com/150", link: "https://github.com/Felipedmgs/projeto3" },
-    { title: "Projeto 3", image: "https://via.placeholder.com/150", link: "https://github.com/Felipedmgs/projeto3" }
+    { title: "Projeto 1", image: "./img/proj_portifolio.png", link: "https://github.com/Felipedmgs/site_portifolio" },
+    { title: "Projeto 2", image: "./img/proj_2.png", link: "https://github.com/Felipedmgs/cloud_pass" },
+    { title: "Projeto 3", image: "./img/proj_3.png", link: "https://github.com/Felipedmgs/projeto3" },
+    { title: "Projeto 3", image: "./img/proj_4.png", link: "https://github.com/Felipedmgs/projeto3" }
 ];
 
 // Function to render projects

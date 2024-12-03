@@ -336,7 +336,15 @@ ul {
     height: auto; /* Mantém a proporção */
     display: block; /* Remove o espaço extra ao redor da imagem */
     margin: 0 auto; /* Centraliza a imagem */
+    
 }
+
+.cert-item img:hover{
+    transform: scale(1.08);    
+}
+
+
+
 
 #educacao h2{
     padding: 20px;
@@ -386,13 +394,15 @@ ul {
 }
 
 .project {
-    text-align: center;  
+    text-align: center;
 }
 
 .project img {
     max-width: 100%;    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    width: 200px;
+    height: 200px;
 }
 
 .project a {
@@ -442,7 +452,7 @@ footer a:hover {
     border: 2px solid #64ffda;
     border-radius: 50%;
     padding: 4px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;    
 }
 
 .social-footer a:hover img {
@@ -624,6 +634,7 @@ footer a:hover {
 
     .social-footer {
         display: flex;
+        padding-bottom: 70px;
     }
 
     .social-sidebar {
