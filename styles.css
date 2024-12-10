@@ -343,9 +343,6 @@ ul {
     transform: scale(1.08);    
 }
 
-
-
-
 #educacao h2{
     padding: 20px;
 }
@@ -520,22 +517,37 @@ footer a:hover {
     bottom: 20px; /* Distância da parte inferior da tela */
     right: 20px;  /* Distância da borda direita */
     z-index: 1000; /* Garante que ficará sobre outros elementos */
-  }
-  
-  .whatsapp-float img {
-    width: 50px; /* Tamanho do ícone */
-    height: 50px;
+}
+
+.whatsapp-float img {
+    width: 60px; /* Tamanho consistente do ícone */
+    height: 60px;
     border-radius: 50%; /* Deixa o ícone circular */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
-  }
-  
-  .whatsapp-float img:hover {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
-  }
-  
+    filter: hue-rotate(415deg); /* Tom azulado */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(30px) scale(1); /* Começa deslocado */
+    animation: fadeIn 2.2s ease-out forwards; /* Animação ao carregar */
+    transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease; /* Suavização no hover */
+}
 
+.whatsapp-float img:hover {
+    transform: scale(1.2) !important; /* Efeito de zoom ao passar o mouse */
+    opacity: 1; /* Totalmente visível no hover */
+    filter: hue-rotate(390deg); /* Pequena variação no tom */
+}
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(35px) scale(1); /* Vem de baixo */
+    }
+    100% {
+        opacity: 0.7; /* Totalmente visível após a animação */
+        transform: translateY(0) scale(1); /* Fica na posição final */
+    }
+}
+  
 
 
 @media (max-width: 768px) {
