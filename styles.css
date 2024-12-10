@@ -384,13 +384,19 @@ ul {
     border-radius: 8px; /* Bordas arredondadas */
     background-color: #f9f9f9; /* Fundo claro */
 }
-
+ 
 .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
     padding-bottom: 20px;
+}
+
+.gallery img{
+    background-color: rgba(0, 0, 255, 0.5); /* Azul translúcido */
+    opacity: 0.7; /* Começa invisível */
+    
 }
 
 .project {
@@ -508,6 +514,28 @@ footer a:hover {
     transform: scaleX(1); /* Animação da esquerda para a direita */
   }
   
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px; /* Distância da parte inferior da tela */
+    right: 20px;  /* Distância da borda direita */
+    z-index: 1000; /* Garante que ficará sobre outros elementos */
+  }
+  
+  .whatsapp-float img {
+    width: 50px; /* Tamanho do ícone */
+    height: 50px;
+    border-radius: 50%; /* Deixa o ícone circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .whatsapp-float img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+  }
+  
+
+
 
 
 @media (max-width: 768px) {
