@@ -737,6 +737,16 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
+
+    
+.cert-devops_div{
+    margin-right: 0px !important;
+}
+
+.cert-devops_p{
+    padding-bottom: 0px !important;
+}
+
     .main-content {
         padding: 5px !important;
         max-width: 90% !important;
