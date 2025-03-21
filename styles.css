@@ -343,6 +343,15 @@ ul {
     transform: scale(1.08);    
 }
 
+.cert-devops_div{
+    margin-right: 50px !important;
+}
+
+.cert-devops_p{
+    padding-bottom: 15px !important;
+}
+
+
 #educacao h2{
     padding: 20px;
 }
