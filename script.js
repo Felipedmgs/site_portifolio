@@ -1,6 +1,6 @@
 // Sample projects array
 const projects = [
-    { title: "Projeto 1", image: "./img/proj_portifolio.png", link: "https://github.com/Felipedmgs/site_portifolio" },
+    { title: "Projeto 1", image: "./img/prj_1_fimind.png", link: "https://fimind.app" },
     { title: "Projeto 2", image: "./img/proj_2.png", link: "https://github.com/Felipedmgs/cloud_pass" },
     { title: "Projeto 3", image: "./img/proj_3.png", link: "https://github.com/Felipedmgs/monitoring_house" },
     { title: "Projeto 4", image: "./img/proj_4.png", link: "https://github.com/Felipedmgs/agenda_sph_react" }
